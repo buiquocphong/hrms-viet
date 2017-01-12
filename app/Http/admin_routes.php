@@ -78,4 +78,8 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 	/* ================== Levels ================== */
 	Route::resource(config('laraadmin.adminRoute') . '/levels', 'LA\LevelsController');
 	Route::get(config('laraadmin.adminRoute') . '/level_dt_ajax', 'LA\LevelsController@dtajax');
+
+	/* ================== Contracts ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/contracts', 'LA\ContractsController');
+	Route::get(config('laraadmin.adminRoute') . '/contract_dt_ajax', 'LA\ContractsController@dtajax');
 });
