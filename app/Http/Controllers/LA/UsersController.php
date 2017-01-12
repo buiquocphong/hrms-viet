@@ -69,9 +69,9 @@ class UsersController extends Controller
 			$user = User::findOrFail($id);
 			if(isset($user->id)) {
 				if($user['type'] == "Employee") {
-					return redirect(config('laraadmin.adminRoute') . '/employees/'.$user->id);
+					return redirect(config('laraadmin.adminRoute') . '/employees/'.$user->context_id);
 				} else if($user['type'] == "Client") {
-					return redirect(config('laraadmin.adminRoute') . '/clients/'.$user->id);
+					return redirect(config('laraadmin.adminRoute') . '/clients/'.$user->context_id);
 				}
 			} else {
 				return view('errors.404', [

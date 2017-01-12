@@ -98,6 +98,7 @@ class EmployeesController extends Controller
 			// Create Employee
 			$employee_id = Module::insert("Employees", $request);
 			// Create User
+			if ($request->create_user !=null){
 			$user = User::create([
 				'name' => $request->name,
 				'email' => $request->email,
@@ -120,7 +121,7 @@ class EmployeesController extends Controller
 			} else {
 				Log::info("User created: username: ".$user->email." Password: ".$password);
 			}
-			
+			}  //end of tes if
 			return redirect()->route(config('laraadmin.adminRoute') . '.employees.index');
 			
 		} else {
