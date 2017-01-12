@@ -109,6 +109,10 @@
 					<div class="panel-body">
 						@la_display($module, 'hop_dong')
 						@la_display($module, 'file_hop_dong')
+						@la_display($module, 'gioi_han')
+						@la_display($module, 'thoi_han')
+						@la_display($module, 'dong_bhxh')
+						@la_display($module, 'thoi_gian_bao_truoc')
 					</div>
 				</div>
 			</div>

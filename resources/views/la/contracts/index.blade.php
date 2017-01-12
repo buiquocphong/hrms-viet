@@ -61,6 +61,10 @@
 					{{--
 					@la_input($module, 'hop_dong')
 					@la_input($module, 'file_hop_dong')
+					@la_input($module, 'gioi_han')
+					@la_input($module, 'thoi_han')
+					@la_input($module, 'dong_bhxh')
+					@la_input($module, 'thoi_gian_bao_truoc')
 					--}}
 				</div>
 			</div>

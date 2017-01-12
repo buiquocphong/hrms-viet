@@ -23,7 +23,7 @@ class ContractsController extends Controller
 {
 	public $show_action = true;
 	public $view_col = 'hop_dong';
-	public $listing_cols = ['id', 'hop_dong', 'file_hop_dong'];
+	public $listing_cols = ['id', 'hop_dong', 'file_hop_dong', 'gioi_han', 'thoi_han', 'dong_bhxh', 'thoi_gian_bao_truoc'];
 	
 	public function __construct() {
 		// Field Access of Listing Columns

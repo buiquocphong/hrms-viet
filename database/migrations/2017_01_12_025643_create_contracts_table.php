@@ -20,6 +20,10 @@ class CreateContractsTable extends Migration
         Module::generate("Contracts", 'contracts', 'hop_dong', 'fa-legal', [
             ["hop_dong", "Loại Hợp Đồng", "Name", true, "", 0, 256, true],
             ["file_hop_dong", "File Hợp Đồng", "Files", false, "", 0, 0, false],
+            ["gioi_han", "Giới Hạn", "Checkbox", false, "Yes", 0, 0, true],
+            ["thoi_han", "Thời Hạn (Tháng)", "Integer", false, "", 0, 11, true],
+            ["dong_bhxh", "Đóng Bảo Hiểm Xã Hội", "Checkbox", false, "", 0, 0, true],
+            ["thoi_gian_bao_truoc", "Số Ngày Báo Trước", "Integer", false, "", 0, 11, true],
         ]);
 		
 		/*
