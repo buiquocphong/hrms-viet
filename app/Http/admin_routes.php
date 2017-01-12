@@ -74,4 +74,8 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 	/* ================== Job_Titles ================== */
 	Route::resource(config('laraadmin.adminRoute') . '/job_titles', 'LA\Job_TitlesController');
 	Route::get(config('laraadmin.adminRoute') . '/job_title_dt_ajax', 'LA\Job_TitlesController@dtajax');
+
+	/* ================== Levels ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/levels', 'LA\LevelsController');
+	Route::get(config('laraadmin.adminRoute') . '/level_dt_ajax', 'LA\LevelsController@dtajax');
 });
